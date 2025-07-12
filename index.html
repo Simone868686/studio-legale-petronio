@@ -1,130 +1,138 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studio Legale Petronio - Parma</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Studio Legale Petronio – Parma</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
       color: #333;
     }
-
     header {
-      background-color: #002b45;
+      background: #1d3557;
       color: white;
-      padding: 30px;
+      padding: 40px 20px;
       text-align: center;
-      position: relative;
     }
-
-    header img.logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      height: 60px;
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
     }
-
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
     nav {
-      background-color: #00486b;
-      padding: 10px;
+      background: #457b9d;
       text-align: center;
+      padding: 10px;
     }
-
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
     }
-
     section {
-      padding: 40px;
-      max-width: 900px;
+      padding: 40px 20px;
+      max-width: 1000px;
       margin: auto;
     }
-
+    .hero-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #1d3557;
+    }
+    .services, .contact {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
     footer {
-      background-color: #002b45;
+      background: #1d3557;
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
     }
-
-    h1, h2 {
-      color: #00486b;
-    }
-
-    form input, form textarea, form button {
-      display: block;
+    .contact form input,
+    .contact form textarea {
       width: 100%;
-      margin-top: 10px;
       padding: 10px;
-      font-size: 1rem;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
-
-    form button {
-      background-color: #00486b;
+    .contact form button {
+      background: #1d3557;
       color: white;
       border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 4px;
       cursor: pointer;
     }
-
-    form button:hover {
-      background-color: #00334f;
+    .contact form button:hover {
+      background: #457b9d;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="https://img.icons8.com/ios-filled/100/002b45/scale.png" alt="Logo Studio Petronio" class="logo">
-    <h1>Studio Legale Petronio</h1>
-    <p>Specializzati in Diritto del Lavoro – Parma</p>
-  </header>
+<header>
+  <h1>Studio Legale Petronio</h1>
+  <p>Specializzati in diritto del lavoro – Parma</p>
+</header>
 
-  <nav>
-    <a href="#chi-siamo">Chi siamo</a>
-    <a href="#competenze">Aree di competenza</a>
-    <a href="#contatti">Contatti</a>
-  </nav>
+<nav>
+  <a href="#chi-siamo">Chi Siamo</a>
+  <a href="#servizi">Servizi</a>
+  <a href="#contatti">Contatti</a>
+</nav>
 
-  <section>
-    <h2 id="chi-siamo">Chi siamo</h2>
-    <p>Lo Studio Legale Petronio, con sede a Parma, è attivo da oltre 20 anni nel campo del diritto del lavoro. 
-      Offriamo consulenza e assistenza legale personalizzata per lavoratori, aziende e professionisti.</p>
-  </section>
+<section>
+  <img class="hero-image" src="https://images.unsplash.com/photo-1588776814546-3d8335ad3d1e?auto=format&fit=crop&w=1050&q=80" alt="Immagine Studio Legale" />
+</section>
 
-  <section>
-    <h2 id="competenze">Aree di competenza</h2>
-    <ul>
-      <li>Contratti di lavoro e consulenza HR</li>
-      <li>Licenziamenti e contenziosi</li>
-      <li>Assistenza in vertenze sindacali</li>
-      <li>Rapporti di lavoro subordinati, autonomi e parasubordinati</li>
-      <li>Assistenza nelle cause di lavoro individuali e collettive</li>
-    </ul>
-  </section>
+<section class="services" id="chi-siamo">
+  <h2>Chi Siamo</h2>
+  <p>Lo Studio Legale Petronio opera da oltre 20 anni a Parma, con una consolidata esperienza nel diritto del lavoro. Offriamo consulenze e assistenza legale per lavoratori e aziende, con un approccio personalizzato, competente e riservato.</p>
+</section>
 
-  <section>
-    <h2 id="contatti">Contatti</h2>
-    <p><strong>Indirizzo:</strong> Viale Mentana 25, 43121 Parma (PR)</p>
-    <p><strong>Telefono:</strong> +39 0521 123456</p>
-    <p><strong>Email:</strong> info@studiolegalepetronio.it</p>
-    <form action="https://formspree.io/f/mayvlvge" method="POST">
-      <input type="text" name="name" placeholder="Il tuo nome" required>
-      <input type="email" name="email" placeholder="La tua email" required>
-      <textarea name="message" rows="5" placeholder="Il tuo messaggio" required></textarea>
-      <button type="submit">Invia messaggio</button>
-    </form>
-  </section>
+<section class="services" id="servizi">
+  <h2>Servizi Offerti</h2>
+  <ul>
+    <li>Assistenza in controversie di lavoro</li>
+    <li>Licenziamenti e impugnazioni</li>
+    <li>Contrattualistica aziendale</li>
+    <li>Consulenze a lavoratori dipendenti e dirigenti</li>
+    <li>Supporto in vertenze sindacali</li>
+  </ul>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Studio Legale Petronio – Tutti i diritti riservati</p>
-  </footer>
+<section class="contact" id="contatti">
+  <h2>Contattaci</h2>
+  <p>Compila il modulo sottostante o scrivici a <strong>info@studiolegalepetronio.it</strong></p>
+  <form>
+    <input type="text" placeholder="Nome e Cognome" required />
+    <input type="email" placeholder="Email" required />
+    <textarea placeholder="Messaggio" rows="4" required></textarea>
+    <button type="submit">Invia</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Studio Legale Petronio – Parma | Tutti i diritti riservati
+</footer>
 
 </body>
 </html>
