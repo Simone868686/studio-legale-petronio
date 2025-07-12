@@ -1,88 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Studio Legale Petronio – Parma</title>
+  <title>Studio Legale Petronio</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
     }
     header {
-      background: #1d3557;
+      background-color: #002855;
       color: white;
-      padding: 40px 20px;
+      padding: 20px;
       text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8em;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
     }
     nav {
-      background: #457b9d;
-      text-align: center;
+      background-color: #01498c;
+      display: flex;
+      justify-content: center;
       padding: 10px;
     }
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 15px;
-      font-weight: bold;
     }
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
+      background-color: white;
     }
-    .hero-image {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    h2 {
-      color: #1d3557;
-    }
-    .services, .contact {
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin-top: 30px;
+    section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
     }
     footer {
-      background: #1d3557;
+      background-color: #002855;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    .contact form input,
-    .contact form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .contact form button {
-      background: #1d3557;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin-top: 10px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .contact form button:hover {
-      background: #457b9d;
+      padding: 15px;
     }
   </style>
 </head>
@@ -90,7 +52,7 @@
 
 <header>
   <h1>Studio Legale Petronio</h1>
-  <p>Specializzati in diritto del lavoro – Parma</p>
+  <p>Specializzati in Diritto del Lavoro – Parma</p>
 </header>
 
 <nav>
@@ -99,39 +61,30 @@
   <a href="#contatti">Contatti</a>
 </nav>
 
-<section>
-  <img class="hero-image" src="https://images.unsplash.com/photo-1588776814546-3d8335ad3d1e?auto=format&fit=crop&w=1050&q=80" alt="Immagine Studio Legale" />
-</section>
-
-<section class="services" id="chi-siamo">
+<section id="chi-siamo">
   <h2>Chi Siamo</h2>
-  <p>Lo Studio Legale Petronio opera da oltre 20 anni a Parma, con una consolidata esperienza nel diritto del lavoro. Offriamo consulenze e assistenza legale per lavoratori e aziende, con un approccio personalizzato, competente e riservato.</p>
+  <img src="img/team.jpg" alt="Team legale"/>
+  <p>Lo Studio Legale Petronio offre consulenza legale in materia di diritto del lavoro, assistendo aziende e privati con professionalità e competenza.</p>
 </section>
 
-<section class="services" id="servizi">
-  <h2>Servizi Offerti</h2>
+<section id="servizi">
+  <h2>Servizi</h2>
+  <img src="img/services.jpg" alt="Servizi legali"/>
   <ul>
-    <li>Assistenza in controversie di lavoro</li>
-    <li>Licenziamenti e impugnazioni</li>
-    <li>Contrattualistica aziendale</li>
-    <li>Consulenze a lavoratori dipendenti e dirigenti</li>
-    <li>Supporto in vertenze sindacali</li>
+    <li>Consulenza in diritto del lavoro</li>
+    <li>Gestione controversie tra datore di lavoro e dipendenti</li>
+    <li>Assistenza legale in sede giudiziale e stragiudiziale</li>
   </ul>
 </section>
 
-<section class="contact" id="contatti">
-  <h2>Contattaci</h2>
-  <p>Compila il modulo sottostante o scrivici a <strong>info@studiolegalepetronio.it</strong></p>
-  <form>
-    <input type="text" placeholder="Nome e Cognome" required />
-    <input type="email" placeholder="Email" required />
-    <textarea placeholder="Messaggio" rows="4" required></textarea>
-    <button type="submit">Invia</button>
-  </form>
+<section id="contatti">
+  <h2>Contatti</h2>
+  <img src="img/contact.jpg" alt="Contatti"/>
+  <p>Email: info@studiopetronio.it<br>Telefono: 0521 123456<br>Indirizzo: Via Garibaldi 27, Parma (PR)</p>
 </section>
 
 <footer>
-  &copy; 2025 Studio Legale Petronio – Parma | Tutti i diritti riservati
+  &copy; 2025 Studio Legale Petronio - Tutti i diritti riservati
 </footer>
 
 </body>
